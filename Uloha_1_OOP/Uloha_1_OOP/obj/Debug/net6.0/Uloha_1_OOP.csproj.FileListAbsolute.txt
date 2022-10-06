@@ -1,0 +1,15 @@
+/Users/bymikiii/Projects/Uloha_1_OOP/Uloha_1_OOP/bin/Debug/net6.0/Uloha_1_OOP
+/Users/bymikiii/Projects/Uloha_1_OOP/Uloha_1_OOP/bin/Debug/net6.0/Uloha_1_OOP.deps.json
+/Users/bymikiii/Projects/Uloha_1_OOP/Uloha_1_OOP/bin/Debug/net6.0/Uloha_1_OOP.runtimeconfig.json
+/Users/bymikiii/Projects/Uloha_1_OOP/Uloha_1_OOP/bin/Debug/net6.0/Uloha_1_OOP.dll
+/Users/bymikiii/Projects/Uloha_1_OOP/Uloha_1_OOP/bin/Debug/net6.0/Uloha_1_OOP.pdb
+/Users/bymikiii/Projects/Uloha_1_OOP/Uloha_1_OOP/obj/Debug/net6.0/Uloha_1_OOP.csproj.AssemblyReference.cache
+/Users/bymikiii/Projects/Uloha_1_OOP/Uloha_1_OOP/obj/Debug/net6.0/Uloha_1_OOP.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bymikiii/Projects/Uloha_1_OOP/Uloha_1_OOP/obj/Debug/net6.0/Uloha_1_OOP.AssemblyInfoInputs.cache
+/Users/bymikiii/Projects/Uloha_1_OOP/Uloha_1_OOP/obj/Debug/net6.0/Uloha_1_OOP.AssemblyInfo.cs
+/Users/bymikiii/Projects/Uloha_1_OOP/Uloha_1_OOP/obj/Debug/net6.0/Uloha_1_OOP.csproj.CoreCompileInputs.cache
+/Users/bymikiii/Projects/Uloha_1_OOP/Uloha_1_OOP/obj/Debug/net6.0/Uloha_1_OOP.dll
+/Users/bymikiii/Projects/Uloha_1_OOP/Uloha_1_OOP/obj/Debug/net6.0/refint/Uloha_1_OOP.dll
+/Users/bymikiii/Projects/Uloha_1_OOP/Uloha_1_OOP/obj/Debug/net6.0/Uloha_1_OOP.pdb
+/Users/bymikiii/Projects/Uloha_1_OOP/Uloha_1_OOP/obj/Debug/net6.0/Uloha_1_OOP.genruntimeconfig.cache
+/Users/bymikiii/Projects/Uloha_1_OOP/Uloha_1_OOP/obj/Debug/net6.0/ref/Uloha_1_OOP.dll

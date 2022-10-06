@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Uloha_1_OOP/1.0.0": {
+        "runtime": {
+          "Uloha_1_OOP.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Uloha_1_OOP/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
