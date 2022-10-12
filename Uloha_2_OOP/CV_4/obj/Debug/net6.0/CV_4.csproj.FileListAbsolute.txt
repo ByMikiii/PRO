@@ -1,0 +1,15 @@
+/Users/bymikiii/Projects/CV_4/CV_4/obj/Debug/net6.0/CV_4.csproj.AssemblyReference.cache
+/Users/bymikiii/Projects/CV_4/CV_4/obj/Debug/net6.0/CV_4.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bymikiii/Projects/CV_4/CV_4/obj/Debug/net6.0/CV_4.AssemblyInfoInputs.cache
+/Users/bymikiii/Projects/CV_4/CV_4/obj/Debug/net6.0/CV_4.AssemblyInfo.cs
+/Users/bymikiii/Projects/CV_4/CV_4/obj/Debug/net6.0/CV_4.csproj.CoreCompileInputs.cache
+/Users/bymikiii/Projects/CV_4/CV_4/bin/Debug/net6.0/CV_4
+/Users/bymikiii/Projects/CV_4/CV_4/bin/Debug/net6.0/CV_4.deps.json
+/Users/bymikiii/Projects/CV_4/CV_4/bin/Debug/net6.0/CV_4.runtimeconfig.json
+/Users/bymikiii/Projects/CV_4/CV_4/bin/Debug/net6.0/CV_4.dll
+/Users/bymikiii/Projects/CV_4/CV_4/bin/Debug/net6.0/CV_4.pdb
+/Users/bymikiii/Projects/CV_4/CV_4/obj/Debug/net6.0/CV_4.dll
+/Users/bymikiii/Projects/CV_4/CV_4/obj/Debug/net6.0/refint/CV_4.dll
+/Users/bymikiii/Projects/CV_4/CV_4/obj/Debug/net6.0/CV_4.pdb
+/Users/bymikiii/Projects/CV_4/CV_4/obj/Debug/net6.0/CV_4.genruntimeconfig.cache
+/Users/bymikiii/Projects/CV_4/CV_4/obj/Debug/net6.0/ref/CV_4.dll
