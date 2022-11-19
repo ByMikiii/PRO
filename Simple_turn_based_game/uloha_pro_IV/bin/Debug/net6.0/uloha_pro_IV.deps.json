@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "uloha_pro_IV/1.0.0": {
+        "dependencies": {
+          "uloha_pro_IV_lib": "1.0.0"
+        },
+        "runtime": {
+          "uloha_pro_IV.dll": {}
+        }
+      },
+      "uloha_pro_IV_lib/1.0.0": {
+        "runtime": {
+          "uloha_pro_IV_lib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "uloha_pro_IV/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "uloha_pro_IV_lib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
