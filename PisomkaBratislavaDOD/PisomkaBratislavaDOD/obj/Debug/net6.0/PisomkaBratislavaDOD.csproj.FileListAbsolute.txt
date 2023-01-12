@@ -1,0 +1,15 @@
+/Users/bymikiii/Projects/PisomkaBratislavaDOD/PisomkaBratislavaDOD/bin/Debug/net6.0/PisomkaBratislavaDOD
+/Users/bymikiii/Projects/PisomkaBratislavaDOD/PisomkaBratislavaDOD/bin/Debug/net6.0/PisomkaBratislavaDOD.deps.json
+/Users/bymikiii/Projects/PisomkaBratislavaDOD/PisomkaBratislavaDOD/bin/Debug/net6.0/PisomkaBratislavaDOD.runtimeconfig.json
+/Users/bymikiii/Projects/PisomkaBratislavaDOD/PisomkaBratislavaDOD/bin/Debug/net6.0/PisomkaBratislavaDOD.dll
+/Users/bymikiii/Projects/PisomkaBratislavaDOD/PisomkaBratislavaDOD/bin/Debug/net6.0/PisomkaBratislavaDOD.pdb
+/Users/bymikiii/Projects/PisomkaBratislavaDOD/PisomkaBratislavaDOD/obj/Debug/net6.0/PisomkaBratislavaDOD.csproj.AssemblyReference.cache
+/Users/bymikiii/Projects/PisomkaBratislavaDOD/PisomkaBratislavaDOD/obj/Debug/net6.0/PisomkaBratislavaDOD.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bymikiii/Projects/PisomkaBratislavaDOD/PisomkaBratislavaDOD/obj/Debug/net6.0/PisomkaBratislavaDOD.AssemblyInfoInputs.cache
+/Users/bymikiii/Projects/PisomkaBratislavaDOD/PisomkaBratislavaDOD/obj/Debug/net6.0/PisomkaBratislavaDOD.AssemblyInfo.cs
+/Users/bymikiii/Projects/PisomkaBratislavaDOD/PisomkaBratislavaDOD/obj/Debug/net6.0/PisomkaBratislavaDOD.csproj.CoreCompileInputs.cache
+/Users/bymikiii/Projects/PisomkaBratislavaDOD/PisomkaBratislavaDOD/obj/Debug/net6.0/PisomkaBratislavaDOD.dll
+/Users/bymikiii/Projects/PisomkaBratislavaDOD/PisomkaBratislavaDOD/obj/Debug/net6.0/refint/PisomkaBratislavaDOD.dll
+/Users/bymikiii/Projects/PisomkaBratislavaDOD/PisomkaBratislavaDOD/obj/Debug/net6.0/PisomkaBratislavaDOD.pdb
+/Users/bymikiii/Projects/PisomkaBratislavaDOD/PisomkaBratislavaDOD/obj/Debug/net6.0/PisomkaBratislavaDOD.genruntimeconfig.cache
+/Users/bymikiii/Projects/PisomkaBratislavaDOD/PisomkaBratislavaDOD/obj/Debug/net6.0/ref/PisomkaBratislavaDOD.dll
