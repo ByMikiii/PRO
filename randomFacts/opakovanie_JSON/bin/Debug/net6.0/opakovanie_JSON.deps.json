@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "opakovanie_JSON/1.0.0": {
+        "runtime": {
+          "opakovanie_JSON.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "opakovanie_JSON/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
