@@ -1,0 +1,15 @@
+C:\Users\ByMikiii\RiderProjects\LoL API projekt\bin\Debug\net6.0\LoL API projekt.exe
+C:\Users\ByMikiii\RiderProjects\LoL API projekt\bin\Debug\net6.0\LoL API projekt.deps.json
+C:\Users\ByMikiii\RiderProjects\LoL API projekt\bin\Debug\net6.0\LoL API projekt.runtimeconfig.json
+C:\Users\ByMikiii\RiderProjects\LoL API projekt\bin\Debug\net6.0\LoL API projekt.dll
+C:\Users\ByMikiii\RiderProjects\LoL API projekt\bin\Debug\net6.0\LoL API projekt.pdb
+C:\Users\ByMikiii\RiderProjects\LoL API projekt\obj\Debug\net6.0\LoL API projekt.csproj.AssemblyReference.cache
+C:\Users\ByMikiii\RiderProjects\LoL API projekt\obj\Debug\net6.0\LoL API projekt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ByMikiii\RiderProjects\LoL API projekt\obj\Debug\net6.0\LoL API projekt.AssemblyInfoInputs.cache
+C:\Users\ByMikiii\RiderProjects\LoL API projekt\obj\Debug\net6.0\LoL API projekt.AssemblyInfo.cs
+C:\Users\ByMikiii\RiderProjects\LoL API projekt\obj\Debug\net6.0\LoL API projekt.csproj.CoreCompileInputs.cache
+C:\Users\ByMikiii\RiderProjects\LoL API projekt\obj\Debug\net6.0\LoL API projekt.dll
+C:\Users\ByMikiii\RiderProjects\LoL API projekt\obj\Debug\net6.0\refint\LoL API projekt.dll
+C:\Users\ByMikiii\RiderProjects\LoL API projekt\obj\Debug\net6.0\LoL API projekt.pdb
+C:\Users\ByMikiii\RiderProjects\LoL API projekt\obj\Debug\net6.0\LoL API projekt.genruntimeconfig.cache
+C:\Users\ByMikiii\RiderProjects\LoL API projekt\obj\Debug\net6.0\ref\LoL API projekt.dll
