@@ -1,21 +1,10 @@
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace LoL_API_projekt;
 
 public class Champion
 {
-	[JsonPropertyName("champions")] public List<Champion>Champions {get; set;}
+    [JsonPropertyName("key")] public string Id {get; set;}
+    [JsonPropertyName("name")] public string Name {get; set;}
 
-	public Champion()
-	{
-		Champions = new List<Champion>();
-	}
-
-	public void ToString()
-	{
-		foreach (var ch in Champions)
-		{
-			Console.WriteLine(ch);
-		}
-	}
 }
