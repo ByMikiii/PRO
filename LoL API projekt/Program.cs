@@ -2,20 +2,14 @@
 using System.Text.Json.Nodes;
 using LoL_API_projekt;
 
-string api_key = "";
-
-Champions champs = new Champions();
-using(var sr = new StreamReader("../../../champions.json"))
-{
-	string str = sr.ReadToEnd();
-	champs = JsonSerializer.Deserialize<Champions>(str);
-}
+string api_key = "?api_key=";
 
 Console.WriteLine("Enter summoners name:");
 string name = Console.ReadLine();
 
-Console.WriteLine("Enter region:");
+Console.WriteLine("Enter region: (eun1, euw1, na1)");
 string region = Console.ReadLine();
+
 
 Summoner summoner = new Summoner();
 
@@ -24,7 +18,8 @@ using(HttpClient client = new HttpClient())
 {
 	HttpResponseMessage response = await client.GetAsync(url);
 	string json = await response.Content.ReadAsStringAsync();
+	
 	summoner = JsonSerializer.Deserialize<Summoner>(json);
 }
 
-summoner.option();
+await summoner.option();
