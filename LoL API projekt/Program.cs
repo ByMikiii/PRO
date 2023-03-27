@@ -2,7 +2,7 @@
 using System.Text.Json.Nodes;
 using LoL_API_projekt;
 
-string api_key = "?api_key=";
+string api_key = "?api_key=RGAPI-a3a2d672-d2db-4555-9d10-3c6d070fcfa4";
 
 Console.WriteLine("Enter summoners name:");
 string name = Console.ReadLine();
@@ -18,7 +18,6 @@ using(HttpClient client = new HttpClient())
 {
 	HttpResponseMessage response = await client.GetAsync(url);
 	string json = await response.Content.ReadAsStringAsync();
-	
 	summoner = JsonSerializer.Deserialize<Summoner>(json);
 }
 

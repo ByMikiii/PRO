@@ -9,7 +9,7 @@ public class Summoner
 {
     [JsonPropertyName("id")] public string Id {get; set;}
     [JsonPropertyName("name")] public string Name {get; set;}
-    
+
     [JsonPropertyName("accountId")] public string AccountId {get; set;}
     [JsonPropertyName("puuid")] public string PuuId {get; set;}
     [JsonPropertyName("summonerLevel")] public int Level {get; set;}
@@ -18,7 +18,7 @@ public class Summoner
     public async Task<string> option()
     {
         while (true)
-        { 
+        {
             Console.WriteLine("\n Select option:");
             Console.WriteLine("  [1] Show summoners data");
             Console.WriteLine("  [2] Show summoners champion mastery");
@@ -29,10 +29,10 @@ public class Summoner
         if (useroption == "1")
         {
             Console.WriteLine(this.ToString());
-        } 
+        }
         else if(useroption == "2")
         {
-            string api_key = "?api_key=";
+            string api_key = "?api_key=RGAPI-a3a2d672-d2db-4555-9d10-3c6d070fcfa4";
             string url = "https://eun1.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/"+this.Id+api_key;
             using(HttpClient client = new HttpClient())
             {
@@ -40,10 +40,28 @@ public class Summoner
                 string json = "{ \"masteries\": "+ await response.Content.ReadAsStringAsync()+" }";
 
                 Masteries mastrs = new Masteries();
-                
+
                 mastrs = JsonSerializer.Deserialize<Masteries>(json);
                 mastrs.ToString();
             }
+        }
+        else if (useroption == "3")
+        {
+	        Console.WriteLine("Summoners game: ");
+
+	        string api_key = "?api_key=RGAPI-a3a2d672-d2db-4555-9d10-3c6d070fcfa4";
+	        string url = "https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/"+ this.PuuId+"/ids"+api_key;
+	        using(HttpClient client = new HttpClient())
+	        {
+		        HttpResponseMessage response = await client.GetAsync(url);
+		        string json = "{ \"games\": "+ await response.Content.ReadAsStringAsync()+" }";
+
+				Games games = new Games();
+
+		        games = JsonSerializer.Deserialize<Games>(json);
+		        games.ToString();
+	        }
+
         }
         }
         return "";
@@ -52,7 +70,7 @@ public class Summoner
     public override string ToString()
     {
         var dt = new DateTime(1970, 1, 1, 0, 0, 0, 0).AddSeconds(Math.Round(this.RevisionDate / 1000d)).ToLocalTime();
-        
+
         return $" Name: {this.Name} \n Id: {this.Id} \n PuuId: {this.PuuId} \n Level: {this.Level} \n Revision date: {dt}";
     }
 }

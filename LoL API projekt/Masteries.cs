@@ -11,32 +11,42 @@ public class Masteries
     {
         Masteriess = new List<Mastery>();
     }
-    
+
     public void ToString()
     {
-        Champions champs = new Champions();
+	    Champions champs = new Champions();
         using(var sr = new StreamReader("../../../champions.json"))
         {
             string str = sr.ReadToEnd();
             champs = JsonSerializer.Deserialize<Champions>(str);
         }
 
+        Console.WriteLine("How many champions do you want to show ?");
+        string st = Console.ReadLine();
+        int maxChamps = Int32.Parse(st);
+
         int i = 1;
         foreach (var mstr in Masteriess)
         {
-            foreach (var chmp in champs.Championss)
-            {
-                if (chmp.Id == mstr.champID.ToString())
-                {
-                    Console.WriteLine("["+i+"] "+chmp.Name);
-                }
-            }
-            var dt = new DateTime(1970, 1, 1, 0, 0, 0, 0).AddSeconds(Math.Round(mstr.lastPlayed / 1000d)).ToLocalTime();
-            
-            Console.WriteLine($"  Points: {mstr.champPoints} \n  Level: {mstr.champLevel} \n  Last played: {dt}");
-            
-            Console.WriteLine("-----------------------------------------");
-            i++;
+	        if (maxChamps >= i)
+	        {
+		        foreach (var chmp in champs.Championss)
+		        {
+			        if (chmp.Id == mstr.champID.ToString())
+			        {
+				        Console.WriteLine("[" + i + "] " + chmp.Name);
+			        }
+		        }
+
+		        var dt = new DateTime(1970, 1, 1, 0, 0, 0, 0).AddSeconds(Math.Round(mstr.lastPlayed / 1000d))
+			        .ToLocalTime();
+
+		        Console.WriteLine($"  Points: {mstr.champPoints} \n  Level: {mstr.champLevel} \n  Last played: {dt}");
+
+		        Console.WriteLine("-----------------------------------------");
+	        }
+
+	        i++;
         }
     }
 }
