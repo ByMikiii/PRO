@@ -32,7 +32,7 @@ public class Summoner
         }
         else if(useroption == "2")
         {
-            string api_key = "?api_key=RGAPI-a3a2d672-d2db-4555-9d10-3c6d070fcfa4";
+            string api_key = "?api_key=";
             string url = "https://eun1.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/"+this.Id+api_key;
             using(HttpClient client = new HttpClient())
             {
@@ -49,7 +49,7 @@ public class Summoner
         {
 	        Console.WriteLine("Summoners game: ");
 
-	        string api_key = "?api_key=RGAPI-a3a2d672-d2db-4555-9d10-3c6d070fcfa4";
+	        string api_key = "?api_key=";
 	        string url = "https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/"+ this.PuuId+"/ids"+api_key;
 	        using(HttpClient client = new HttpClient())
 	        {

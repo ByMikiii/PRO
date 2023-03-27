@@ -2,7 +2,7 @@
 using System.Text.Json.Nodes;
 using LoL_API_projekt;
 
-string api_key = "?api_key=RGAPI-a3a2d672-d2db-4555-9d10-3c6d070fcfa4";
+string api_key = "?api_key=";
 
 Console.WriteLine("Enter summoners name:");
 string name = Console.ReadLine();
