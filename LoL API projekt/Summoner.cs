@@ -55,7 +55,7 @@ public class Summoner
 	        {
 		        HttpResponseMessage response = await client.GetAsync(url);
 		        string json = "{ \"games\": "+ await response.Content.ReadAsStringAsync()+" }";
-
+                
 				Games games = new Games();
 
 		        games = JsonSerializer.Deserialize<Games>(json);

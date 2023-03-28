@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "/Users/bymikiii/.nuget/packages/": {}
+    "C:\\Users\\ByMikiii\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/bymikiii/Projects/PRO/LoL API projekt/LoL API projekt.csproj",
+      "projectUniqueName": "C:\\Users\\ByMikiii\\Development\\PRO\\LoL API projekt\\LoL API projekt.csproj",
       "projectName": "LoL API projekt",
-      "projectPath": "/Users/bymikiii/Projects/PRO/LoL API projekt/LoL API projekt.csproj",
-      "packagesPath": "/Users/bymikiii/.nuget/packages/",
-      "outputPath": "/Users/bymikiii/Projects/PRO/LoL API projekt/obj/",
+      "projectPath": "C:\\Users\\ByMikiii\\Development\\PRO\\LoL API projekt\\LoL API projekt.csproj",
+      "packagesPath": "C:\\Users\\ByMikiii\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ByMikiii\\Development\\PRO\\LoL API projekt\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/bymikiii/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\ByMikiii\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\ByMikiii\\.dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

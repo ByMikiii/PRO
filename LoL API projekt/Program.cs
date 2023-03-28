@@ -2,12 +2,13 @@
 using System.Text.Json.Nodes;
 using LoL_API_projekt;
 
+
 string api_key = "?api_key=";
 
 Console.WriteLine("Enter summoners name:");
 string name = Console.ReadLine();
 
-Console.WriteLine("Enter region: (eun1, euw1, na1)");
+Console.WriteLine("Enter region: (eun1, euw1)");
 string region = Console.ReadLine();
 
 
