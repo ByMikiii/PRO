@@ -22,7 +22,7 @@ public class Summoner
             Console.WriteLine("\n Select option:");
             Console.WriteLine("  [1] Show summoners data");
             Console.WriteLine("  [2] Show summoners champion mastery");
-            Console.WriteLine("  [3] Show summoners games");
+            Console.WriteLine("  [3] Show most recent game");
 
         string useroption = Console.ReadLine();
 
@@ -59,8 +59,19 @@ public class Summoner
 				Games games = new Games();
 
 		        games = JsonSerializer.Deserialize<Games>(json);
+                
 		        games.ToString();
-	        }
+                
+                Thread.Sleep(300);
+                Game game = new Game();
+                using(var sr = new StreamReader("../../../game.json"))
+                {
+                    string str = sr.ReadToEnd();
+                    game = JsonSerializer.Deserialize<Game>(str);
+                }
+                
+                game.info.ToString();
+            }
 
         }
         }

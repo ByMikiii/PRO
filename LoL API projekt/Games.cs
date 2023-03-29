@@ -25,15 +25,11 @@ public class Games
 				{
 					HttpResponseMessage response = await client.GetAsync(url);
 					string json = await response.Content.ReadAsStringAsync();
-					
-					Game g = new Game();
-					Metadata metadata = new Metadata();
-					Info info = new Info();
-					
-					//Console.WriteLine(json);
-					g = JsonSerializer.Deserialize<Game>(json);
-				
-					g.metadata.ToString();
+
+					using (var sw = new StreamWriter("../../../game.json"))
+					{
+						sw.WriteLine(json);
+					}
 					
 				}
 			}
