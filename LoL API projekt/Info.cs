@@ -28,11 +28,21 @@ public class Info
         {
 	        if (i == 0)
 	        {
-		        Console.WriteLine("Blue Team");
+		        if (part.Win == false)
+		        {
+			        Console.WriteLine("BLUE TEAM  -  DEFEAT\n----------------------------------------------------");
+		        }else{Console.WriteLine("BLUE TEAM  -  VICTORY\n----------------------------------------------------");}
+		        Console.WriteLine("Name  |  Lane  |  Champion  |  ");
+		        Console.WriteLine("-------------------------------------------------------------------");
 	        }
 	        else if (i == 5)
 	        {
-		        Console.WriteLine("\nRed Team");
+		        if (part.Win == false)
+		        {
+			        Console.WriteLine("\nRED TEAM  -  DEFEAT\n----------------------------------------------------");
+		        }else{Console.WriteLine("\nRED TEAM  -  VICTORY\n----------------------------------------------------");}
+		        Console.WriteLine("Name  |  Lane  |  Champion  |  ");
+		        Console.WriteLine("-------------------------------------------------------------------");
 	        }
 	        part.ToString();
 	        i++;

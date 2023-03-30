@@ -29,6 +29,7 @@ public class Games
 					using (var sw = new StreamWriter("../../../game.json"))
 					{
 						sw.WriteLine(json);
+						Console.WriteLine("  "+gameID);
 					}
 
 				}

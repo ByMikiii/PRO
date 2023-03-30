@@ -10,6 +10,7 @@ public class Participant
 	[JsonPropertyName("champLevel")] public  int ChampLevel { get; set; }
 
 	[JsonPropertyName("lane")] public  string Lane { get; set; }
+	[JsonPropertyName("win")] public bool Win { get; set; }
 
 
 

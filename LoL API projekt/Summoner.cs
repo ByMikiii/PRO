@@ -47,7 +47,7 @@ public class Summoner
         }
         else if (useroption == "3")
         {
-	        Console.WriteLine("Summoners game: ");
+	        Console.WriteLine("");
 
 	        string api_key = "?api_key=";
 	        string url = "https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/"+ this.PuuId+"/ids"+api_key;
