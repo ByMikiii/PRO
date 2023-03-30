@@ -55,13 +55,13 @@ public class Summoner
 	        {
 		        HttpResponseMessage response = await client.GetAsync(url);
 		        string json = "{ \"games\": "+ await response.Content.ReadAsStringAsync()+" }";
-                
+
 				Games games = new Games();
 
 		        games = JsonSerializer.Deserialize<Games>(json);
-                
+
 		        games.ToString();
-                
+
                 Thread.Sleep(300);
                 Game game = new Game();
                 using(var sr = new StreamReader("../../../game.json"))
@@ -69,7 +69,7 @@ public class Summoner
                     string str = sr.ReadToEnd();
                     game = JsonSerializer.Deserialize<Game>(str);
                 }
-                
+
                 game.info.ToString();
             }
 
