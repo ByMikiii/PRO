@@ -19,8 +19,7 @@ public class Games
 		{
 			if (i < 1)
 			{
-				string api_key = "?api_key=";
-				string url = "https://europe.api.riotgames.com/lol/match/v5/matches/"+gameID+api_key;
+				string url = "https://europe.api.riotgames.com/lol/match/v5/matches/"+gameID+Constants.api_key;
 				using(HttpClient client = new HttpClient())
 				{
 					HttpResponseMessage response = await client.GetAsync(url);
@@ -33,6 +32,7 @@ public class Games
 					}
 
 				}
+				Thread.Sleep(100);
 			}
 
 			i++;

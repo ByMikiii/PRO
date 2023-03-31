@@ -32,8 +32,7 @@ public class Summoner
         }
         else if(useroption == "2")
         {
-            string api_key = "?api_key=";
-            string url = "https://eun1.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/"+this.Id+api_key;
+            string url = "https://eun1.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/"+this.Id+Constants.api_key;
             using(HttpClient client = new HttpClient())
             {
                 HttpResponseMessage response = await client.GetAsync(url);
@@ -49,8 +48,7 @@ public class Summoner
         {
 	        Console.WriteLine("");
 
-	        string api_key = "?api_key=";
-	        string url = "https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/"+ this.PuuId+"/ids"+api_key;
+	        string url = "https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/"+ this.PuuId+"/ids"+Constants.api_key;
 	        using(HttpClient client = new HttpClient())
 	        {
 		        HttpResponseMessage response = await client.GetAsync(url);

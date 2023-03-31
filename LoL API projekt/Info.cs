@@ -7,7 +7,6 @@ public class Info
     [JsonPropertyName("gameCreation")] public long GameCreation {get; set;}
     [JsonPropertyName("gameDuration")] public int GameDuration {get; set;}
     [JsonPropertyName("gameMode")] public string GameMode {get; set;}
-
     [JsonPropertyName("participants")] public List<Participant>participants { get; set; }
 
     public Info()
@@ -30,19 +29,19 @@ public class Info
 	        {
 		        if (part.Win == false)
 		        {
-			        Console.WriteLine("BLUE TEAM  -  DEFEAT\n----------------------------------------------------");
-		        }else{Console.WriteLine("BLUE TEAM  -  VICTORY\n----------------------------------------------------");}
-		        Console.WriteLine("Name  |  Lane  |  Champion  |  ");
-		        Console.WriteLine("-------------------------------------------------------------------");
+			        Console.WriteLine("BLUE TEAM  -  DEFEAT\n----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+		        }else{Console.WriteLine("BLUE TEAM  -  VICTORY\n----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");}
+		        Console.WriteLine("   Name   |   Lane   |   Champion   |   CS   |   Kills   |   Deaths   |   Assists   |   KDA   |");
+		        Console.WriteLine("----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
 	        }
 	        else if (i == 5)
 	        {
 		        if (part.Win == false)
 		        {
-			        Console.WriteLine("\nRED TEAM  -  DEFEAT\n----------------------------------------------------");
-		        }else{Console.WriteLine("\nRED TEAM  -  VICTORY\n----------------------------------------------------");}
-		        Console.WriteLine("Name  |  Lane  |  Champion  |  ");
-		        Console.WriteLine("-------------------------------------------------------------------");
+			        Console.WriteLine("\nRED TEAM  -  DEFEAT\n----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+		        }else{Console.WriteLine("\nRED TEAM  -  VICTORY\n----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");}
+		        Console.WriteLine("   Name   |   Lane   |   Champion   |   CS   |   Kills   |   Deaths   |   Assists   |   KDA   |");
+		        Console.WriteLine("----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
 	        }
 	        part.ToString();
 	        i++;
