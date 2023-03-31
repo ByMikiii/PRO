@@ -43,3 +43,5 @@ C:/Users/ByMikiii/Development/PRO/LoL API projekt/obj/Debug/net6.0/refint/LoL AP
 C:/Users/ByMikiii/Development/PRO/LoL API projekt/obj/Debug/net6.0/LoL API projekt.pdb
 C:/Users/ByMikiii/Development/PRO/LoL API projekt/obj/Debug/net6.0/LoL API projekt.genruntimeconfig.cache
 C:/Users/ByMikiii/Development/PRO/LoL API projekt/obj/Debug/net6.0/ref/LoL API projekt.dll
+/Users/bymikiii/Projects/PRO/LoL API projekt/bin/Debug/net6.0/ConsoleTables.dll
+/Users/bymikiii/Projects/PRO/LoL API projekt/obj/Debug/net6.0/LoL API projekt.csproj.CopyComplete

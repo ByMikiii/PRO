@@ -19,6 +19,9 @@ public class Participant
 	[JsonPropertyName("kills")] public float Kills { get; set; }
 	[JsonPropertyName("deaths")] public float Deaths { get; set; }
 	[JsonPropertyName("assists")] public float Assists { get; set; }
+	[JsonPropertyName("goldEarned")] public int GoldEarned { get; set; }
+	[JsonPropertyName("visionScore")] public int VisionScore { get; set; }
+	[JsonPropertyName("firstBloodKill")] public bool FirstBlood { get; set; }
 
 
 
@@ -26,7 +29,7 @@ public class Participant
 
 	public async void ToString()
 	{
-		Console.WriteLine($"  {this.SummonerName}       {this.Lane}        {this.ChampName}        {this.Cs + this.Css}        {this.Kills}        {this.Deaths}        {this.Assists}        {(this.Kills + this.Assists) / this.Deaths}");
+		Console.WriteLine($"  {this.SummonerName}       {this.Lane}        {this.ChampName}        {this.Cs + this.Css}        {this.Kills}        {this.Deaths}        {this.Assists}        {Math.Round((this.Kills + this.Assists) / this.Deaths, 2)}        {this.GoldEarned}        {this.VisionScore}        {this.FirstBlood}");
 	}
 
 

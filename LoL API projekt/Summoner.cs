@@ -23,6 +23,7 @@ public class Summoner
             Console.WriteLine("  [1] Show summoners data");
             Console.WriteLine("  [2] Show summoners champion mastery");
             Console.WriteLine("  [3] Show most recent game");
+            Console.WriteLine("  [4] Show free champion rotation");
 
         string useroption = Console.ReadLine();
 
@@ -70,6 +71,10 @@ public class Summoner
 
                 game.info.ToString();
             }
+
+        }
+        else if (useroption == "4")
+        {
 
         }
         }

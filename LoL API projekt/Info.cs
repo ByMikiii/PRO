@@ -1,4 +1,5 @@
 ﻿using System.Text.Json.Serialization;
+using ConsoleTables;
 
 namespace LoL_API_projekt;
 
@@ -22,29 +23,44 @@ public class Info
 
         Console.WriteLine($"  Created: {created} \n  Duration: {duration} minutes \n  Gamemode: {this.GameMode} \n");
 
+        var table = new ConsoleTable("  NAME  ", "  LANE  ", "  CHAMPION  ", "  CS  ", "  KILLS  ", "  DEATHS  ", "  ASSISTS  ", "  KDA  ", "  GOLD  ", "  VISION  ",
+	        "FIRST BLOOD");
+
+        var table2 = new ConsoleTable("  NAME  ", "  LANE  ", "  CHAMPION  ", "  CS  ", "  KILLS  ", "  DEATHS  ", "  ASSISTS  ", "  KDA  ", "  GOLD  ", "  VISION  ",
+	        "FIRST BLOOD");
+
         int i = 0;
         foreach (var part in participants)
         {
+	        string fb = "";
+	        if (part.FirstBlood == true)
+	        {
+		        fb = "*";
+	        }
 	        if (i == 0)
 	        {
 		        if (part.Win == false)
-		        {
-			        Console.WriteLine("BLUE TEAM  -  DEFEAT\n----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
-		        }else{Console.WriteLine("BLUE TEAM  -  VICTORY\n----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");}
-		        Console.WriteLine("   Name   |   Lane   |   Champion   |   CS   |   Kills   |   Deaths   |   Assists   |   KDA   |");
-		        Console.WriteLine("----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+		        { Console.WriteLine("                                                             BLUE TEAM  -  DEFEAT"); }
+		        else { Console.WriteLine("                                                             BLUE TEAM  -  VICTORY"); }
 	        }
-	        else if (i == 5)
+
+	        if (i < 5)
 	        {
-		        if (part.Win == false)
-		        {
-			        Console.WriteLine("\nRED TEAM  -  DEFEAT\n----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
-		        }else{Console.WriteLine("\nRED TEAM  -  VICTORY\n----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");}
-		        Console.WriteLine("   Name   |   Lane   |   Champion   |   CS   |   Kills   |   Deaths   |   Assists   |   KDA   |");
-		        Console.WriteLine("----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+		        table.AddRow(part.SummonerName,part.Lane, part.ChampName, part.Cs+part.Css, part.Kills, part.Deaths, part.Assists, Math.Round((part.Kills + part.Assists) / part.Deaths, 2), part.GoldEarned, part.VisionScore, fb);
 	        }
-	        part.ToString();
+
+	        if (i == 5)
+	        {
+		        table.Write(Format.MarkDown);
+		        if (part.Win == false) { Console.WriteLine("\n                                                             RED TEAM  -  DEFEAT");
+		        }else{Console.WriteLine("\n                                                             RED TEAM  -  VICTORY");}
+	        }
+	        if (i >= 5)
+	        {
+		        table2.AddRow(part.SummonerName, part.Lane, part.ChampName, part.Cs+part.Css, part.Kills, part.Deaths, part.Assists, Math.Round((part.Kills + part.Assists) / part.Deaths, 2), part.GoldEarned, part.VisionScore, fb);
+	        }
 	        i++;
         }
+        table2.Write(Format.MarkDown);
     }
 }
