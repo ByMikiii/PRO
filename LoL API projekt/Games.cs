@@ -28,11 +28,10 @@ public class Games
 					using (var sw = new StreamWriter("../../../game.json"))
 					{
 						sw.WriteLine(json);
-						Console.WriteLine("  "+gameID);
 					}
 
 				}
-				Thread.Sleep(100);
+				Thread.Sleep(250);
 			}
 
 			i++;

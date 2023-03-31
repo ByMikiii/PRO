@@ -1,19 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "j/fX7Vg6qnmUVEbghCWMNcbVnT3vFlZqGXIVc2ht+hgjDcAqNBh4tJm+xeIAn13xs5W+Ov0mhEocpkCamxD6PQ==",
+  "dgSpecHash": "wXUD8N1J6wQegb9SAHmGrQNOctqfsyancqR58avD55M2iA8s8nCMer7t/24yNkYm/teTnLz+bpx+QVfTnrHJqQ==",
   "success": true,
-  "projectFilePath": "/Users/bymikiii/Projects/PRO/LoL API projekt/LoL API projekt.csproj",
+  "projectFilePath": "C:\\Users\\ByMikiii\\Development\\PRO\\LoL API projekt\\LoL API projekt.csproj",
   "expectedPackageFiles": [
-    "/Users/bymikiii/.nuget/packages/consoletables/2.4.2/consoletables.2.4.2.nupkg.sha512",
-    "/Users/bymikiii/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "/Users/bymikiii/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "/Users/bymikiii/.nuget/packages/system.io/4.3.0/system.io.4.3.0.nupkg.sha512",
-    "/Users/bymikiii/.nuget/packages/system.reflection/4.3.0/system.reflection.4.3.0.nupkg.sha512",
-    "/Users/bymikiii/.nuget/packages/system.reflection.primitives/4.3.0/system.reflection.primitives.4.3.0.nupkg.sha512",
-    "/Users/bymikiii/.nuget/packages/system.reflection.typeextensions/4.3.0/system.reflection.typeextensions.4.3.0.nupkg.sha512",
-    "/Users/bymikiii/.nuget/packages/system.runtime/4.3.0/system.runtime.4.3.0.nupkg.sha512",
-    "/Users/bymikiii/.nuget/packages/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg.sha512",
-    "/Users/bymikiii/.nuget/packages/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg.sha512"
+    "C:\\Users\\ByMikiii\\.nuget\\packages\\consoletables\\2.4.2\\consoletables.2.4.2.nupkg.sha512",
+    "C:\\Users\\ByMikiii\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ByMikiii\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\ByMikiii\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\ByMikiii\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
+    "C:\\Users\\ByMikiii\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\ByMikiii\\.nuget\\packages\\system.reflection.typeextensions\\4.3.0\\system.reflection.typeextensions.4.3.0.nupkg.sha512",
+    "C:\\Users\\ByMikiii\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\ByMikiii\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
+    "C:\\Users\\ByMikiii\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

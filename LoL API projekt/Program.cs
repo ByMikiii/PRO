@@ -1,29 +1,54 @@
-﻿using System.Text.Json;
-using System.Text.Json.Nodes;
+﻿using System.Diagnostics;
+using System.Net.Mime;
+using System.Text.Json;
 using LoL_API_projekt;
 
-Console.WriteLine("Enter summoners name:");
-string name = Console.ReadLine();
-
-Console.WriteLine("Enter region: (eun1, euw1)");
-string regionn = Console.ReadLine();
-
-
-Summoner summoner = new Summoner();
-
-string url = "https://"+regionn+".api.riotgames.com/lol/summoner/v4/summoners/by-name/"+name+Constants.api_key;
-using(HttpClient client = new HttpClient())
+void getName()
 {
-	HttpResponseMessage response = await client.GetAsync(url);
-	string json = await response.Content.ReadAsStringAsync();
-	summoner = JsonSerializer.Deserialize<Summoner>(json);
+	Console.WriteLine("Enter summoners name:");
+	string name = Console.ReadLine();
+	Constants.name = name;
+	getRegion();
 }
 
-await summoner.option();
+void getRegion()
+{
+	Console.WriteLine("Enter region: (eun1, euw1)");
+	string regionn = Console.ReadLine();
+	if (regionn == "euw1" || regionn == "eun1")
+	{
+		Constants.region = regionn;
+	}
+	else
+	{
+		getRegion();
+	}
+}
+getName();
 
+	Summoner summoner = new Summoner();
+
+	string url = "https://" + Constants.region + ".api.riotgames.com/lol/summoner/v4/summoners/by-name/" +
+	             Constants.name + Constants.api_key;
+	using (HttpClient client = new HttpClient())
+	{
+		HttpResponseMessage response = await client.GetAsync(url);
+		string json = await response.Content.ReadAsStringAsync();
+
+		if (json.Contains("status") || json == "")
+		{
+			Console.WriteLine("Something went wrong! Try again!");
+			getName();
+			getRegion();
+		}
+
+		summoner = JsonSerializer.Deserialize<Summoner>(json);
+	}
+await summoner.option();
 
 public static class Constants
 {
 	public const string api_key = "?api_key=";
-
+	public static string name = "";
+	public static string region = "";
 }

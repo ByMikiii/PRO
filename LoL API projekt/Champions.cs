@@ -21,15 +21,16 @@ public class Champions
 		}
 	}
 
-	public void GetChampById(string id)
+	public string GetChampNameById(string id)
 	{
 		foreach (var chmp in Championss)
 		{
 			if (chmp.Id == id)
 			{
-				Console.WriteLine(chmp.Name);
-				Console.WriteLine(chmp.Id);
+				return chmp.Name;
 			}
 		}
+
+		return "";
 	}
 }

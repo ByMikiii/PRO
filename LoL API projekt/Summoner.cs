@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Net.Mime;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -25,7 +26,8 @@ public class Summoner
             Console.WriteLine("  [3] Show most recent game");
             Console.WriteLine("  [4] Show free champion rotation");
 
-        string useroption = Console.ReadLine();
+
+            string useroption = Console.ReadLine();
 
         if (useroption == "1")
         {
@@ -33,7 +35,7 @@ public class Summoner
         }
         else if(useroption == "2")
         {
-            string url = "https://eun1.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/"+this.Id+Constants.api_key;
+            string url = "https://"+Constants.region+".api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/"+this.Id+Constants.api_key;
             using(HttpClient client = new HttpClient())
             {
                 HttpResponseMessage response = await client.GetAsync(url);
@@ -68,14 +70,25 @@ public class Summoner
                     string str = sr.ReadToEnd();
                     game = JsonSerializer.Deserialize<Game>(str);
                 }
-
+        
                 game.info.ToString();
             }
 
         }
         else if (useroption == "4")
         {
+            string url = "https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations" + Constants.api_key;
+            using (HttpClient client = new HttpClient())
+            {
+                HttpResponseMessage response = await client.GetAsync(url);
+                string json = await response.Content.ReadAsStringAsync();
 
+                FreeChamps freeChamps = new FreeChamps();
+                
+                freeChamps = JsonSerializer.Deserialize<FreeChamps>(json);
+
+                freeChamps.ToString();
+            }
         }
         }
         return "";
